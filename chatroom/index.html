@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat room</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js" integrity="sha512-eVL5Lb9al9FzgR63gDs1MxcDS2wFu3loYAgjIH0+Hg38tCS8Ag62dwKyH+wzDb+QauDpEZjXbMn11blw8cbTJQ==" crossorigin="anonymous"></script>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js" ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="user-box" style="background-color: #111b21;">
+        <div id="user-name-box">
+            <!-- <p class="users"> -->
+                <!-- </p> -->
+                <button id="logout-btn">logout</button>
+        </div>
+        <div id="all-users">
+            All online users
+            <ul style="list-style-type:disc" id="user-list"></ul>
+        </div>
+    </div>
+
+    <div style="margin-left: 30%; background-color: #0b141a; height: 100vh;">
+        <div id="recipient-name-box">
+            Universal chat room
+        </div>
+        <div id="message-container">
+            <!-- <p>Welcome to my chat room</p> -->
+        </div>
+        <div id="send_box">
+            <form >
+                <div id="input_box">
+                    <input type="text" placeholder="Type a message" id="message_input">
+                    <button id="send" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

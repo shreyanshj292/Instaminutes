@@ -1,0 +1,145 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* display: flex; */
+    justify-content: center;
+    /* height: 100%; */
+}
+
+
+/*  Recipient name box css  */
+#recipient-name-box{
+    width: 68vw;
+    position: sticky;
+    top: 0%;
+    height: 7vh;
+    background-color: #202c33;
+    text-align: left;   
+    padding-left: 2vw;
+    line-height: 7vh;
+    color: #ffffff;
+    font-family: 'Helvetica Neue LT Std';
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* User box */
+#user-box{
+    border-right: 1px solid #302f34;
+}
+
+/* User name box */
+#user-name-box{
+    width: 28vw;
+    top: 0%;
+    position: sticky;
+    height: 7vh;
+    background-color: #202c33;
+    text-align: left;   
+    padding-left: 2vw;
+    line-height: 7vh;
+    color: #ffffff;
+    font-family: 'Helvetica Neue LT Std';
+    font-weight: bold;
+    font-size: larger;
+    /* border-right: 1px solid white; */
+}
+
+#all-users{
+    width: 30vw;
+    position: absolute;
+    top: 8vh;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    z-index: 2;
+    color: white;
+}
+
+
+#logout-btn{
+    position: absolute;
+    right: 2vw;
+    top: 2.3vh;
+    z-index: 1;
+}
+
+
+.users{
+    /* vertical-align: middle; */
+}
+
+
+
+
+#message-container{
+    width: 68vw;
+    color: white;
+    height: 92vh;
+    height: 82vh;
+    position: absolute;
+    top: 7vh;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    overflow: auto;
+    scroll-padding-bottom: revert;
+}
+
+#message-container.scroll{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#send_box{
+    width: 70vw;
+    position: sticky;
+    top: 92vh;
+
+}
+
+#input_box{
+    position: absolute;
+    /* bottom: 2%; */
+    /* left: 25vw; */
+    display: flex;
+    padding-left: 1vw;
+    /* margin-bottom: 2vh; */
+}
+
+#message_input{
+    width: 60vw;
+    bottom: 10px;
+    height: 5vh;
+    margin-bottom: 1vw;
+    border: 2px solid black;
+    border-radius: 10px 0px 0px 10px;
+    text-indent: 1vw;
+    background-color: #2a3942;
+    color: #5d6d76;
+}
+
+#send{
+    width: 8vw;
+    right: 25%;
+    margin-bottom: 1vw;
+    border: 2px solid black ;
+    border-left: 0px;
+    border-radius: 0 10px 10px 0;
+    background-color: #2a3942;
+    color: #5d6d76;
+}
+
+
+
+
+
+/*  CSS for user box on left side of the page  */
+#user-box{
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* padding-top: 20px; */
+}
